@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي أبو نصير الرياضي</title>
+    
+    <style>
+        :root {
+            --primary-black: #121212;
+            --karate-red: #d32f2f;
+            --white: #ffffff;
+            --gray-bg: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--gray-bg);
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-card {
+            max-width: 420px;
+            width: 100%;
+            background: var(--white);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        .header-section {
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 6px solid var(--karate-red);
+        }
+
+        .club-name {
+            margin: 0;
+            font-size: 1.7em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            margin-top: 10px;
+            font-size: 0.9em;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        .content-body {
+            padding: 25px;
+        }
+
+        .category-title {
+            font-weight: bold;
+            color: var(--primary-black);
+            border-right: 5px solid var(--karate-red);
+            padding-right: 12px;
+            margin: 20px 0 15px 0;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.2s ease;
+        }
+
+        .data-row:hover {
+            transform: scale(1.02);
+            border-color: #ddd;
+        }
+
+        .label-text {
+            color: #444;
+            font-weight: 500;
+        }
+
+        .price-tag {
+            color: var(--karate-red);
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+
+        .whatsapp-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 15px;
+            margin-top: 30px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .footer-info {
+            text-align: center;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        /* تحسينات للشاشات الصغيرة */
+        @media (max-width: 360px) {
+            .club-name { font-size: 1.4em; }
+            .data-row { padding: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-card">
+    <div class="header-section">
+        <h1 class="club-name">نادي أبو نصير الرياضي</h1>
+        <div class="tagline">بوابتك للاحتراف في فنون الدفاع عن النفس</div>
+    </div>
+
+    <div class="content-body">
+        
+        <div class="category-title">الاشتراكات والزي</div>
+        
+        <div class="data-row">
+            <span class="label-text">اشتراك الطالب (شهري)</span>
+            <span class="price-tag">20 دينار</span>
+        </div>
+
+        <div class="data-row">
+            <span class="label-text">بدلة النادي الرسمية</span>
+            <span class="price-tag">20 دينار</span>
+        </div>
+
+        <div class="category-title">اختبارات الترقية</div>
+        
+        <div class="data-row">
+            <span class="label-text">ترقية حزام (ملون)</span>
+            <span class="price-tag">25 دينار</span>
+        </div>
+
+        <div class="data-row">
+            <span class="label-text">اختبار الحزام الأسود</span>
+            <span class="price-tag">50 دينار</span>
+        </div>
+
+        <a href="https://wa.me/962xxxxxxxx" class="whatsapp-btn whatsapp-action">
+            تواصل معنا للاستفسار والتسجيل
+        </a>
+
+        <div class="footer-info">
+            &copy; 2026 نادي أبو نصير الرياضي - جميع الحقوق محفوظة
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
